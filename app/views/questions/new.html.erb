@@ -1,18 +1,15 @@
-<h1>New Question</h1>
+<h1>質問作成</h1>
 <%= form_with model: @question do |form| %><!-- フォームビルダー機能でrailsの規約に沿ったフォームを生成 -->
   <div>
-    <%= form.label :title %>
-    <br>
+    タイトル<br>
     <%= form.text_field :title %><!-- form.text_fieldは1行入力が可能なパーツ -->
   </div>
   <div>
-    <%= form.label :name %>
-    <br>
+    名前<br>
     <%= form.text_field :name %>
   </div>
   <div>
-    <%= form.label :content %>
-    <br>
+    内容<br>
     <%= form.text_area :content %><!-- form.text_areaは複数行入力が可能なパーツ -->
   </div>
   <div>
